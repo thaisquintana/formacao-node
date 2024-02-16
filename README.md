@@ -48,12 +48,12 @@ São informações que tanto o front quando o backend saibam lidar com uma requi
 
 ```before```
 
-![Código sem cabeçalho explicitado na requisição](image-1.png)
+![Código sem cabeçalho explicitado na requisição](https://github.com/thaisquintana/formacao-node/assets/5264498/68e384a3-4103-4785-a7d2-986a9c9dd8bd)
 
-![Resposta da aplicação sem o cabeçalho indicando o content-type](image.png)
+![Resposta da aplicação sem o cabeçalho indicando o content-type](https://github.com/thaisquintana/formacao-node/assets/5264498/61123bfe-b546-4da7-9297-ed4abe6b97ef)
 
 ```after```
 
-![Código aplicando o cabeçalho para explicitar o retorno que deseja receber de formatação do backend](https://file%2B.vscode-resource.vscode-cdn.net/Users/thaisquintana/Desktop/code.png?version%3D1708060324637)
+![Código aplicando o cabeçalho para explicitar o retorno que deseja receber de formatação do backend](https://github.com/thaisquintana/formacao-node/assets/5264498/37a9d0f1-fd1a-4ff9-8789-b3a4e5f9009d)
 
-![Retorno do array formatado como JSON, para facilitar a leitura da resposta. Isso acontece pela inclusão do content-type no request do cabeçalho](image-2.png)
+![Retorno do array formatado como JSON, para facilitar a leitura da resposta. Isso acontece pela inclusão do content-type no request do cabeçalho](https://github.com/thaisquintana/formacao-node/assets/5264498/11d91c5a-2fde-48b6-b365-0d90342f7eef)

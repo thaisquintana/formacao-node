@@ -1,6 +1,7 @@
+## Crie um package.json com informações básicas do projeto, com o seguinte comando:
 ``npm init -y``
-Inicia um package.json com informações básicas do projeto
 
+#### Resulado:
 ```bash
 {
   "name": "formacao-node",
@@ -26,3 +27,33 @@ Inicia um package.json com informações básicas do projeto
       - DELETE => Remove um recurso no backend
     - URL
 ```
+
+# Conceitos:
+
+## Stateful
+Toda vez que variáveis são criadas dentro do projeto que esteja rodando nesse projeto, elas serão salvas em mémoria, isso significa, que a aplicação é Stateful.
+
+## Stateless
+Aplicações Stateless por sua vez, não depende de informações salvas em memória do projeto, ou seja suas informações serão salvas em um banco de dados (por exemplo), assim ao parar a aplicação o desenvolvedor não irá perder nenhuma informação quando a aplicação for parada.
+
+## JSON - JavaScript Object Notation
+Estrutura de dados muito conhecida entre frontend e backend, ou backend e outros backends, para fazer a transição de dados.
+
+
+## Cabeçalhos ou HEADERS
+Cabeçalhos da requisição(request) ou da resposta(response) são chamados de ``metadados``.
+São informações que tanto o front quando o backend saibam lidar com uma requisição da melhor forma. Ou seja, cabeçalhos nada mais são do que informações adicionais enviados à API e nada tem a ver com a resposta do backend para o frontend, mas sim como o dado enviado pode ser interpretado pelo frontend.
+
+#### Exemplo:
+
+```before```
+
+![Código sem cabeçalho explicitado na requisição](image-1.png)
+
+![Resposta da aplicação sem o cabeçalho indicando o content-type](image.png)
+
+```after```
+
+![Código aplicando o cabeçalho para explicitar o retorno que deseja receber de formatação do backend](https://file%2B.vscode-resource.vscode-cdn.net/Users/thaisquintana/Desktop/code.png?version%3D1708060324637)
+
+![Retorno do array formatado como JSON, para facilitar a leitura da resposta. Isso acontece pela inclusão do content-type no request do cabeçalho](image-2.png)

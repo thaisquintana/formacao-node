@@ -12,6 +12,8 @@ const server = http.createServer((request, response) => {
     if (method === 'GET' && url === '/users') {        
         // early return
         // o uso do JSON é necessário porque o servidor em node não interpreta arrays e objetos sem que eles estejam nos seguintes formatos: string (JSON), Buffer, ou Uint8Array.
+
+        // por padrão não é necessário declarar o status 200 como retorno pois isso já acontece automaticamente.
         return response
         .setHeader('Content-type', 'application/json')
         .end(JSON.stringify(users))
@@ -23,10 +25,12 @@ const server = http.createServer((request, response) => {
             email: 'johndoe@example.com'
         })
 
-        return response.end('Criação de usuário')
+        // Status 201 representa que a criação foi feita.
+        return response.writeHead(201).end('Usuário criado.')
     }
 
-    return response.end("hello world")
+    // retorna com a função .end() vazia é opcional.
+    return response.writeHead(404).end()
 })
 
 server.listen(3333)

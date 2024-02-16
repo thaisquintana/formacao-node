@@ -17,6 +17,10 @@
 }
 ```
 
+# Conceitos:
+
+## HTTP - Methods
+
 ```bash
   - HTTP
     - Método HTTP
@@ -27,8 +31,6 @@
       - DELETE => Remove um recurso no backend
     - URL
 ```
-
-# Conceitos:
 
 ## Stateful
 Toda vez que variáveis são criadas dentro do projeto que esteja rodando nesse projeto, elas serão salvas em mémoria, isso significa, que a aplicação é Stateful.

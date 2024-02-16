@@ -17,6 +17,12 @@
 }
 ```
 
+## Para poder visualizar o retorno do servidor no terminal é recomendado que se instale o HTTPIE:
+Para instalar é preciso ter o [homebrew](https://brew.sh/) instalado.
+
+``brew install httpie``
+
+
 # Conceitos:
 
 ## HTTP - Methods
